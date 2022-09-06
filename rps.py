@@ -14,7 +14,7 @@
 
 #You should have received a copy of the GNU General Public License
 #along with this program.  If not, see <https://www.gnu.org/licenses/>.
-import PySimpleGUIQt as sg
+import PySimpleGUI as sg
 import random as rnd
 import os , sys
 userChoice = ""
@@ -43,7 +43,7 @@ def scissorsPressed():
 sg.theme('SystemDefaultForReal ')
 layout = [
     [sg.Text("Play Rock Paper Scissors!")],
-    [sg.Button("Rock"), sg.Button("Paper"), sg.Button("Scissors")]
+    [sg.Button("Rock", use_ttk_buttons = True), sg.Button("Paper",use_ttk_buttons = True), sg.Button("Scissors",use_ttk_buttons = True)]
 ]
 window = sg.Window('Rock Paper Scissors', layout)
 #rps logic
